@@ -29,6 +29,30 @@ C = pygame.image.load('PION BLANC/CHEVAL BLANC.png').convert()
 C = pygame.transform.smoothscale(C, [100,100])
 C.set_colorkey([181, 230, 29])  
 
+T = pygame.image.load('PION BLANC/TOUR BLANCHE.png').convert()
+T = pygame.transform.smoothscale(T, [100,100])
+T.set_colorkey([181, 230, 29])
+
+reineblancheN = pygame.image.load('PION NOIR/REINE NOIR.png').convert()
+reineblancheN = pygame.transform.smoothscale(reineblancheN, [100,100])
+reineblancheN.set_colorkey([181, 230, 29])
+
+RN = pygame.image.load('PION NOIR/ROI NOIR.png').convert()
+RN = pygame.transform.smoothscale(RN, [100,100])
+RN.set_colorkey([181, 230, 29])  
+               
+FN = pygame.image.load('PION NOIR/FOU NOIR.png').convert()
+FN = pygame.transform.smoothscale(FN, [100,100])
+FN.set_colorkey([181, 230, 29])  
+               
+CN = pygame.image.load('PION NOIR/CHEVAL NOIR.png').convert()
+CN = pygame.transform.smoothscale(CN, [100,100])
+CN.set_colorkey([181, 230, 29])  
+               
+TN = pygame.image.load('PION NOIR/TOUR NOIR.png').convert()
+TN = pygame.transform.smoothscale(TN, [100,100])
+TN.set_colorkey([181, 230, 29])
+
 # DÉBUT
 
 clock = pygame.time.Clock()
@@ -89,10 +113,17 @@ while fini == 0:
     ecran.blit(F, [500, 0])
     ecran.blit(C, [100, 0])
     ecran.blit(C, [600, 0])
+    ecran.blit(T, [0, 0])
+    ecran.blit(T, [700, 0])
     
-    
-    
-    
+    ecran.blit(reineblancheN, [400, 700])
+    ecran.blit(RN, [300, 700])
+    ecran.blit(FN, [200, 700])
+    ecran.blit(FN, [500, 700])
+    ecran.blit(CN, [100, 700])
+    ecran.blit(CN, [600, 700])
+    ecran.blit(TN, [0, 700])
+    ecran.blit(TN, [700, 700])    
     
     pygame.display.flip()
     
